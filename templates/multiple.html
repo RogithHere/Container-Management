@@ -1,0 +1,117 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Dropdown</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ddd;
+            padding: 8px;
+            z-index: 1;
+        }
+
+        .dropdown-content label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .dropdown-content label input {
+            margin-right: 8px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button>Open Dropdown</button>
+        <div class="dropdown-content">
+            <label><input type="checkbox" value="option1"> Option 1</label>
+            <label><input type="checkbox" value="option2"> Option 2</label>
+            <label><input type="checkbox" value="option3"> Option 3</label>
+            
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select2 Example</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    
+    <select id="mySelect" multiple>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        
+    </select>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#mySelect').select2();
+        });
+    </script>
+
+</body>
+</html>
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select2 Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/css/multi-select-tag.css">
+    
+</head>
+<body>
+
+    <select name="countries" id="countries" multiple>
+        <option value="1">Afghanistan</option>
+        <option value="2">Australia</option>
+        <option value="3">Germany</option>
+        <option value="4">Canada</option>
+        <option value="5">Russia</option>
+    </select>
+
+    <script>
+        new MultiSelectTag('countries')  // id
+    </script>
+
+<script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/js/multi-select-tag.js"></script>
+
+</body>
+</html>
